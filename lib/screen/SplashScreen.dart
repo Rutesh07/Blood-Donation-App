@@ -12,6 +12,10 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  get controller => null;
+
+  get text => null;
+
   @override
   void initState() {
     super.initState();
@@ -26,25 +30,53 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
         backgroundColor: Color(0xffffffff),
-        body: Center(
-          child: Column(
-            children: [
-              SizedBox(
-                height: 300,
-              ),
-              Center(child: Text("Blood Donation App")),
-              // SvgPicture.asset(
-              //   'assets/images/BestDesign.svg',
-              //   height: 450,
-              //   alignment: Alignment.center,
-              // ),
-              SizedBox(
-                height: 230,
-              ),
-              Lottie.asset("assets/animations/lf30_editor_7io4xwvy.json",
-                  height: 300)
-            ],
+        body: SingleChildScrollView(
+          controller: controller,
+          child: Center(
+            child: Column(
+              children: [
+                SizedBox(
+                    height: 200,
+                  ),
+                  Center(child: Text("Blood\nDonation\nApp" ,style: TextStyle(fontFamily: "PlayfairDisplay", fontSize: 40 , fontWeight: FontWeight.bold ),),),
+        
+                  // SvgPicture.asset(
+                  //   'assets/images/BestDesign.svg',
+                  //   height: 450,
+                  //   alignment: Alignment.center,
+                  // ),
+                  SizedBox(
+                    height: 230,
+                  ),
+                  Lottie.asset("assets/animations/lf30_editor_7io4xwvy.json",
+                      height: 300)
+                ],
+            ),
           ),
-        ));
+        ),
+        // (
+          // child: Center(
+          //   child: Column(
+          //     // children: [
+          //     //   SizedBox(
+          //     //     height: 200,
+          //     //   ),
+          //     //   Center(child: Text("Blood\nDonation\nApp" ,style: TextStyle(fontFamily: "PlayfairDisplay", fontSize: 40 , fontWeight: FontWeight.bold ),),),
+        
+          //     //   // SvgPicture.asset(
+          //     //   //   'assets/images/BestDesign.svg',
+          //     //   //   height: 450,
+          //     //   //   alignment: Alignment.center,
+          //     //   // ),
+          //     //   SizedBox(
+          //     //     height: 230,
+          //     //   ),
+          //     //   Lottie.asset("assets/animations/lf30_editor_7io4xwvy.json",
+          //     //       height: 300)
+          //     // ],
+          //   ),
+          // ),
+        // )
+        );
   }
 }

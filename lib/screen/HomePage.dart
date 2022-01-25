@@ -51,7 +51,7 @@ class _HomeState extends State<Home> {
                         color: Colors.black26,
                         shape: BoxShape.circle,
                       ),
-                      child: Image.asset('assets/images/rii.jpg', fit: BoxFit.fill,),
+                      child: Image.asset('assets/images/LOGO.jpg', fit: BoxFit.fill,),
                     ),
                     ListTile(
                       onTap: () {},

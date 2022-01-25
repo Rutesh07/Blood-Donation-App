@@ -64,7 +64,8 @@ flutter:
   assets:
     - assets/animations/
     - assets/images/19259.jpg
-    - assets/images/rii.jpg
+    - assets/images/LOGO.jpg
+    - assets/images/LOGO.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -89,6 +90,16 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
+  #   - family: RobotoMono
+  #     fonts:
+  #       - asset: fonts/RobotoMono-Regular.ttf
+  #       - asset: fonts/RobotoMono-Bold.ttf
+  #         weight: 700
+  #   - family: PlayfairDisplay
+  #     fonts:
+  #       - asset: fonts/PlayfairDisplay-Bold.ttf
+  #         style: bold
+  #         
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
